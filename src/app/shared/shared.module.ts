@@ -13,12 +13,14 @@ import {MatListModule} from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import { AreaComponent } from './widgets/area/area.component';
 import { HighchartsChartModule } from 'highcharts-angular';
+import { CardComponent } from './widgets/card/card.component';
 @NgModule({
   declarations: [
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    AreaComponent],
+    AreaComponent,
+    CardComponent],
   imports: [
     CommonModule,
     MatDividerModule,
@@ -29,13 +31,15 @@ import { HighchartsChartModule } from 'highcharts-angular';
     MatMenuModule,
     MatListModule,
     RouterModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+
   ],
   exports:[
     HeaderComponent,
     SidebarComponent,
     FooterComponent,
-    AreaComponent
+    AreaComponent,
+    CardComponent
   ]
 })
 export class SharedModule { }

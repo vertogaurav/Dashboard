@@ -7,8 +7,10 @@ import { PostsComponent } from 'src/app/modules/posts/posts.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MatSidenavModule} from '@angular/material/sidenav'
 import { MatDividerModule } from '@angular/material/divider';
-
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -20,7 +22,13 @@ import { MatDividerModule } from '@angular/material/divider';
     RouterModule,
     SharedModule,
     MatSidenavModule,
-    MatDividerModule
+    MatDividerModule,
+    FlexLayoutModule,
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule
+
+    
   ]
 })
 export class DefaultModule { }
